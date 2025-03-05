@@ -6,7 +6,7 @@ def generate_password(length, complexity):
     elif complexity == 'medium':
         characters = string.ascii_letters
     elif complexity == 'high':
-        characters == string.ascii_letters + string.digits + string.punctuation
+        characters = string.ascii_letters + string.digits + string.punctuation
     password = ''.join(random.choice(characters)for _ in range(length))
     return password
 def main():
